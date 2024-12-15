@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .navigation {
+            text-align: center;
+        }
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .navigation a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .about-me img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 5px 0;
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Umair Shaikh</h1>
+        <div class="navigation">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#goals">Learning Goals</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="about" class="about-me">
+            <div class="title">About Me</div>
+            <img src="https://via.placeholder.com/150" alt="Your photo">
+            <p>Hi, I'm MD UMAIR SHAIKH, a first-year BTech student passionate about exploring technology and problem-solving. 
+                I’m eager to learn programming, develop technical skills, and work on innovative projects to shape 
+                a successful engineering career."</p>
+        </div>
+
+        <div id="skills">
+            <div class="title">Skills</div>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Problem-Solving</li>
+                <li>Teamwork</li>
+            </ul>
+        </div>
+
+        <div id="goals">
+            <div class="title">Learning Goals</div>
+            <p>I aim to:</p>
+            <ul>
+                <li>Master React.js for building dynamic web applications.</li>
+                <li>Work on a full-stack project using Node.js and MongoDB.</li>
+                <li>Learn advanced CSS techniques for responsive design.</li>
+            </ul>
+        </div>
+
+        <div id="contact">
+            <div class="title">Contact Me</div>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; Umair Shaikh | 2024</p>
+    </div>
+</body>
+</html>
